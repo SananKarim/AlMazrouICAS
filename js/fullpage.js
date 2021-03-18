@@ -1083,9 +1083,9 @@
                 if (options.anchors.length) {
                     link = options.anchors[i];
                 }
-
+                    
                 li += '<li><a href="#' + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
-
+                    
                 // Only add tooltip if needed (defined by user)
                 var tooltip = options.navigationTooltips[i];
 
