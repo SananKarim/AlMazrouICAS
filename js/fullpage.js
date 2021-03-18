@@ -112,7 +112,19 @@
             lockAnchors: false,
             navigation: false,
             navigationPosition: 'right',
-            navigationTooltips: [],
+            navigationTooltips: [
+                "",
+                "",
+                "Smart Home System",
+                "Guest Room Management",
+                "Audio Video System",
+                "Light Control System",
+                "Home Theater Solutions",
+                "Door Communication System",
+                "CCTV & Security System",
+                "Wiring Accessories",
+             
+            ],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -562,7 +574,8 @@
                 if(!isResponsive){
                     setAutoScrolling(false, 'internal');
                     setFitToSection(false, 'internal');
-                    hide($(SECTION_NAV_SEL));
+                    // hide($(SECTION_NAV_SEL));
+                    // above line will hide the side menu on mobile size
                     addClass($body, RESPONSIVE);
                     if(isFunction( options.afterResponsive )){
                         options.afterResponsive.call( container, active);
@@ -1084,13 +1097,13 @@
                     link = options.anchors[i];
                 }
                     
-                li += '<li><a href="#' + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
+                li += '<li class="new-tooltip"><a href="#' + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
                     
                 // Only add tooltip if needed (defined by user)
                 var tooltip = options.navigationTooltips[i];
 
                 if (typeof tooltip !== 'undefined' && tooltip !== '') {
-                    li += '<div class="' + SECTION_NAV_TOOLTIP + ' fp-' + options.navigationPosition + '">' + tooltip + '</div>';
+                    li += '<div class="new-tooltiptext ' + SECTION_NAV_TOOLTIP + ' ' + options.navigationPosition + '">' + tooltip + '</div>';
                 }
 
                 li += '</li>';
@@ -3807,7 +3820,6 @@
     */
     function hide(el){
         el = getList(el);
-
         for(var i = 0; i<el.length; i++){
             el[i].style.display = 'none';
         }

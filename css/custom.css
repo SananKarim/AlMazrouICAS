@@ -740,12 +740,11 @@ footer iframe{
 .contact_details address
 {
     color: #fff;
-    text-align: left
+    text-align: left;
     font-family:'Gotham', Arial, sans-serif;
 }
 
-element.style {
-}
+
 .contact_details h4{
     font-family:Helvetica;
     font-size:28px;
