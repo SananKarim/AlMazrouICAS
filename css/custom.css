@@ -1714,3 +1714,13 @@ footer .contact_details{
       width: 125px;
     }
 }
+.con{
+    margin-left: 10%;
+    width: 80%;
+}
+@media (max-width:400px){
+    .con{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
