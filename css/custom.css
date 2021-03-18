@@ -659,7 +659,11 @@ background: none;
 .cctv .bottom_title_wrapper{
     padding-top: 1rem;
 }
-
+.bar-cen{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 /* .wiring .round_service{
     padding: 70px 50px;
 } */
