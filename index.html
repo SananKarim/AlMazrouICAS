@@ -43,6 +43,48 @@
             <a href="#wiring"><li> <img src="./images/icon8.svg"></li></a>
         </ul>
     </div>
+
+    <div id="fp-nav" class="fp-right">
+      <i class="fas fa-chevron-up chev_up"></i>
+      <ul>
+          <li class="new-tooltip">
+              <a href="#" class="active"><span class="fp-sr-only">Section 1</span><span></span></a>
+          </li>
+          <li class="new-tooltip">
+              <a href="#"><span class="fp-sr-only">Section 2</span><span></span></a>
+          </li>
+          <li class="new-tooltip">
+              <a href="#home_system"><span class="fp-sr-only">Smart Home System</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Smart Home System</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#guest_room"><span class="fp-sr-only">Guest Room Management</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Guest Room Management</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#lighting"><span class="fp-sr-only">Audio Video System</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Audio Video System</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#audio_video"><span class="fp-sr-only">Light Control System</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Light Control System</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#home_theater"><span class="fp-sr-only">Home Theater Solutions</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Home Theater Solutions</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#smart_door"><span class="fp-sr-only">Door Communication System</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">Door Communication System</div>
+          </li>
+          <li class="new-tooltip">
+              <a href="#cctv"><span class="fp-sr-only">CCTV &amp; Security System</span><span></span></a>
+              <div class="new-tooltiptext fp-tooltip right">CCTV &amp; Security System</div>
+          </li>
+      </ul>
+      <i class="fas fa-chevron-down chev_down"></i>
+  </div>
+  
         <!-- modal Lightbox-->
 <!-- Button trigger modal -->
 
@@ -1027,84 +1069,11 @@
 <!--    <span class=""></span>-->
 <!--</div>-->
 
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="./js/fullpage.js"></script>
 <script src="./js/main.js"></script>
-<script>
-    
-    $(document).ready(function(){
-        $(".fp-sr-only").mouseover(function(){
-  $(".tooltiptext").css("visibility", "visible");
-});
-        $('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
- 		navigation:true,
- 		responsiveWidth: 1200,
- 		responsiveHeight: 0
-	    });
-
-    })
-    
-    $(document).ready(function(){
-        $('#fp-nav').prepend('<i class="fas fa-chevron-up chev_up"></i>');
-         $('#fp-nav').append('<i class="fas fa-chevron-down chev_down"></i>');
-    })
-    
-        $(function() {
-       $( ".chev_up" ).click(function(){
-          $('#fp-nav ul').scrollTop($('#fp-nav ul').scrollTop()-100);
-     }); 
-
-     $( ".chev_down" ).click(function(){
-         $('#fp-nav ul').scrollTop($('#fp-nav ul').scrollTop()+100);;
-     }); 
-    
-    });
-    
-
-   
-
-if ($(window).width() < 1199) {
-    $('.footer_sec ').removeClass('section');
-} 
-
-if ($(window).width() <= 1024) {
-    $('.slider').removeClass('section');
-}
-
-$('.nav-item object a').click(function(e){
-    e.stopPropagation();
-})
-
-</script>
-
-
-
-<script>
-jQuery('#videoModal1').on('hidden.bs.modal', function (e) {
-  
-  jQuery('#videoModal1 iframe').attr("src", jQuery("#videoModal1  iframe").attr("src"));
-});
-jQuery('#videoModal2').on('hidden.bs.modal', function (e) {
-  
-  jQuery('#videoModal2 iframe').attr("src", jQuery("#videoModal2  iframe").attr("src"));
-});
-jQuery('#videoModal3').on('hidden.bs.modal', function (e) {
-  
-  jQuery('#videoModal3 iframe').attr("src", jQuery("#videoModal3  iframe").attr("src"));
-});
-jQuery('#videoModal4').on('hidden.bs.modal', function (e) {
-  
-  jQuery('#videoModal4 iframe').attr("src", jQuery("#videoModal4  iframe").attr("src"));
-});
-</script>
-
 </body>
 
 </html>
